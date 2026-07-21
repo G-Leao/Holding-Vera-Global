@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tecnologia e Comunicação Digital na Holding Vera Global: Broadcasting White Label, transformação digital, desenvolvimento web, comunicação digital, infraestrutura tecnológica, escalabilidade e inovação."
+    />
+    <meta
+      property="og:title"
+      content="Tecnologia & Comunicação Digital | Holding Vera Global"
+    />
+    <meta
+      property="og:description"
+      content="Soluções tecnológicas de ponta: broadcasting white label, desenvolvimento web, comunicação digital e infraestrutura escalável para o Grupo Vera Global."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://holdingveraglobal.com.br/tecnologia"
+    />
+    <meta
+      property="og:image"
+      content="https://holdingveraglobal.com.br/assets/og-image.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Tecnologia & Comunicação Digital | Holding Vera Global"
+    />
+    <meta
+      name="twitter:description"
+      content="Broadcasting white label, desenvolvimento web e infraestrutura tecnológica: o braço digital do Grupo Vera Global."
+    />
+    <title>Tecnologia & Comunicação Digital | Holding Vera Global</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/tecnologia.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Holding Vera Global">
+          <img
+            src="assets/holdingSemFundo.png"
+            alt="Holding Vera Global"
+            width="180"
+            height="50"
+            loading="eager"
+            class="brand-logo"
+          />
+        </a>
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="sobre.html" class="nav-link">Sobre</a>
+          <a href="empresas.html" class="nav-link">Empresas do Grupo</a>
+          <a href="atuacao.html" class="nav-link">Áreas de Atuação</a>
+          <a
+            href="tecnologia.html"
+            class="nav-link is-active"
+            aria-current="page"
+            >Tecnologia</a
+          >
+          <a href="contato.html" class="nav-link">Contato</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-nav-toggle
+        >
+          <span aria-hidden="true"></span><span aria-hidden="true"></span
+          ><span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="nav-drawer" id="menu" data-nav-drawer>
+        <div class="container nav-drawer-inner">
+          <nav class="nav-drawer-nav" aria-label="Menu mobile">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="sobre.html" class="nav-link">Sobre</a>
+            <a href="empresas.html" class="nav-link">Empresas do Grupo</a>
+            <a href="atuacao.html" class="nav-link">Áreas de Atuação</a>
+            <a
+              href="tecnologia.html"
+              class="nav-link is-active"
+              aria-current="page"
+              >Tecnologia</a
+            >
+            <a href="contato.html" class="nav-link">Contato</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <!-- ==================== HERO — CYBER ==================== -->
+      <section class="tech-hero" aria-label="Tecnologia e inovação">
+        <div class="tech-hero-grid" aria-hidden="true"></div>
+        <div class="tech-hero-circuit" aria-hidden="true">
+          <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 1200 800"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0 400 L200 400 L200 200 L400 200 L400 600 L600 600 L600 300 L800 300 L800 500 L1000 500 L1000 100 L1200 100"
+              stroke="rgba(0,180,255,0.08)"
+              stroke-width="1"
+              fill="none"
+            />
+            <path
+              d="M0 600 L150 600 L150 100 L350 100 L350 700 L550 700 L550 150 L750 150 L750 450 L950 450 L950 200 L1200 200"
+              stroke="rgba(59,130,246,0.06)"
+              stroke-width="1"
+              fill="none"
+            />
+            <circle cx="200" cy="200" r="3" fill="rgba(0,180,255,0.15)" />
+            <circle cx="400" cy="600" r="3" fill="rgba(0,180,255,0.15)" />
+            <circle cx="600" cy="300" r="3" fill="rgba(0,180,255,0.15)" />
+            <circle cx="800" cy="500" r="3" fill="rgba(0,180,255,0.15)" />
+            <circle cx="1000" cy="100" r="3" fill="rgba(0,180,255,0.15)" />
+          </svg>
+        </div>
+
+        <!-- Particles canvas -->
+        <canvas
+          class="tech-particles-canvas"
+          id="particlesCanvas"
+          aria-hidden="true"
+        ></canvas>
+
+        <div class="container">
+          <div class="tech-hero-content">
+            <div class="tech-hero-badge">
+              <span class="tech-hero-badge-pulse"></span>
+              Inovação Digital
+            </div>
+            <h1 class="tech-hero-title">
+              Tecnologia &
+              <span class="tech-hero-title-glow">Comunicação Digital</span>
+            </h1>
+            <p class="tech-hero-desc">
+              O braço tecnológico do Grupo Vera Global: broadcasting white
+              label, desenvolvimento web, comunicação digital e infraestrutura
+              escalável — conectando empresas, marcas e criadores ao mercado
+              global com governança e inovação.
+            </p>
+            <div class="tech-hero-indicators">
+              <div class="tech-hero-indicator">
+                <span
+                  class="tech-indicator-dot"
+                  style="
+                    background: #22d3ee;
+                    box-shadow: 0 0 12px rgba(34, 211, 238, 0.6);
+                  "
+                ></span>
+                Cloud Native
+              </div>
+              <div class="tech-hero-indicator">
+                <span
+                  class="tech-indicator-dot"
+                  style="
+                    background: #a78bfa;
+                    box-shadow: 0 0 12px rgba(167, 139, 250, 0.6);
+                  "
+                ></span>
+                IA & ML
+              </div>
+              <div class="tech-hero-indicator">
+                <span
+                  class="tech-indicator-dot"
+                  style="
+                    background: #34d399;
+                    box-shadow: 0 0 12px rgba(52, 211, 153, 0.6);
+                  "
+                ></span>
+                Segurança
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-scroll-indicator">
+          <span data-text="SCROLL">SCROLL</span>
+        </div>
+      </section>
+
+      <!-- ==================== INTRO — CARD with GLOW ==================== -->
+      <section class="tech-intro" aria-label="Introdução">
+        <div class="container">
+          <div class="tech-intro-card">
+            <div class="tech-intro-border"></div>
+            <div class="tech-intro-content">
+              <span class="tech-tag tech-tag--cyber">// INOVAÇÃO</span>
+              <h2>Transformação digital com governança</h2>
+              <p>
+                O braço de tecnologia e comunicação digital da Holding Vera
+                Global Administração LTDA representa um diferencial competitivo
+                significativo para todo o ecossistema empresarial. Desenvolvemos
+                e operamos soluções digitais de ponta que combinam broadcasting
+                white label, desenvolvimento web, comunicação digital e
+                infraestrutura tecnológica escalável.
+              </p>
+              <p>
+                Nossa atuação vai além da prestação de serviços tecnológicos.
+                Somos parceiros estratégicos que entendem os objetivos de
+                negócio de cada empresa do grupo e desenvolvemos soluções
+                personalizadas que geram valor real.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SERVICES GRID ==================== -->
+      <section class="tech-services" aria-label="Soluções tecnológicas">
+        <div class="container">
+          <div class="tech-services-header">
+            <span class="tech-tag tech-tag--cyber">// SOLUÇÕES</span>
+            <h2>Nossas soluções digitais</h2>
+            <p>
+              Tecnologias e serviços que impulsionam o ecossistema Vera Global.
+            </p>
+          </div>
+
+          <div class="tech-services-grid">
+            <!-- Broadcasting -->
+            <article class="tech-service-card">
+              <div class="tech-service-glow"></div>
+              <div class="tech-service-number">01</div>
+              <div class="tech-service-content">
+                <div class="tech-service-icon tech-service-icon--broad">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                  </svg>
+                </div>
+                <h3>Broadcasting White Label</h3>
+                <p>
+                  Infraestrutura completa para soluções digitais com identidade
+                  corporativa, consistência operacional e performance de alto
+                  nível. Redução de custos e time-to-market acelerado.
+                </p>
+                <div class="tech-service-features">
+                  <span>Alta Disponibilidade</span>
+                  <span>CDN Integrada</span>
+                  <span>Escalável</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Transformação Digital -->
+            <article class="tech-service-card tech-service-card--accent">
+              <div class="tech-service-glow"></div>
+              <div class="tech-service-number">02</div>
+              <div class="tech-service-content">
+                <div class="tech-service-icon tech-service-icon--transform">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                </div>
+                <h3>Transformação Digital</h3>
+                <p>
+                  Acompanhamento e implementação de tecnologias disruptivas que
+                  modernizam operações e criam novas oportunidades de negócio
+                  com inteligência artificial e automação.
+                </p>
+                <div class="tech-service-features">
+                  <span>IA & Machine Learning</span>
+                  <span>Automação</span>
+                  <span>Data Analytics</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Desenvolvimento Web -->
+            <article class="tech-service-card">
+              <div class="tech-service-glow"></div>
+              <div class="tech-service-number">03</div>
+              <div class="tech-service-content">
+                <div class="tech-service-icon tech-service-icon--web">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                </div>
+                <h3>Desenvolvimento Web</h3>
+                <p>
+                  Plataformas web modernas, escaláveis e seguras, desenvolvidas
+                  com as melhores práticas e tecnologias do mercado. Design
+                  excepcional e performance otimizada.
+                </p>
+                <div class="tech-service-features">
+                  <span>React / Next.js</span>
+                  <span>Cloud Native</span>
+                  <span>SEO Otimizado</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Infraestrutura -->
+            <article class="tech-service-card tech-service-card--accent">
+              <div class="tech-service-glow"></div>
+              <div class="tech-service-number">04</div>
+              <div class="tech-service-content">
+                <div class="tech-service-icon tech-service-icon--infra">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                    <line x1="6" y1="6" x2="6.01" y2="6" />
+                    <line x1="6" y1="18" x2="6.01" y2="18" />
+                  </svg>
+                </div>
+                <h3>Infraestrutura Tecnológica</h3>
+                <p>
+                  Base técnica preparada para suportar operações, integrações e
+                  crescimento contínuo com segurança multi-camadas, redundância
+                  global e alta disponibilidade.
+                </p>
+                <div class="tech-service-features">
+                  <span>Cloud Computing</span>
+                  <span>Alta Disponibilidade</span>
+                  <span>Segurança Avançada</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TECH STATS ==================== -->
+      <section class="tech-stats" aria-label="Indicadores tecnológicos">
+        <div class="container">
+          <div class="tech-stats-grid">
+            <div class="tech-stat">
+              <span class="tech-stat-value" data-target="99.9">99.9%</span>
+              <span class="tech-stat-label">Uptime Garantido</span>
+              <div class="tech-stat-bar"><span></span></div>
+            </div>
+            <div class="tech-stat">
+              <span class="tech-stat-value" data-target="24">24/7</span>
+              <span class="tech-stat-label">Monitoramento</span>
+              <div class="tech-stat-bar"><span></span></div>
+            </div>
+            <div class="tech-stat">
+              <span class="tech-stat-value" data-target="100">100%</span>
+              <span class="tech-stat-label">Cloud Native</span>
+              <div class="tech-stat-bar"><span></span></div>
+            </div>
+            <div class="tech-stat">
+              <span class="tech-stat-value" data-target="3">3x</span>
+              <span class="tech-stat-label">Redundância Global</span>
+              <div class="tech-stat-bar"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TECHNOLOGY PILLARS ==================== -->
+      <section class="tech-pillars" aria-label="Pilares tecnológicos">
+        <div class="container">
+          <div class="tech-pillars-header">
+            <span class="tech-tag tech-tag--cyber">// PILARES</span>
+            <h2>Tecnologia que impulsiona resultados</h2>
+            <p>
+              Nossos pilares tecnológicos garantem inovação, segurança e
+              escalabilidade.
+            </p>
+          </div>
+          <div class="tech-pillars-grid">
+            <div class="tech-pillar">
+              <div
+                class="tech-pillar-icon"
+                style="
+                  background: rgba(34, 211, 238, 0.1);
+                  color: #22d3ee;
+                  border-color: rgba(34, 211, 238, 0.2);
+                "
+              >
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <h3>Cloud Computing</h3>
+              <p>
+                Infraestrutura em nuvem com escalabilidade automática e
+                otimização de custos em tempo real.
+              </p>
+            </div>
+            <div class="tech-pillar">
+              <div
+                class="tech-pillar-icon"
+                style="
+                  background: rgba(167, 139, 250, 0.1);
+                  color: #a78bfa;
+                  border-color: rgba(167, 139, 250, 0.2);
+                "
+              >
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
+              </div>
+              <h3>Inteligência Artificial</h3>
+              <p>
+                Soluções de IA e machine learning para automação inteligente e
+                análise preditiva.
+              </p>
+            </div>
+            <div class="tech-pillar">
+              <div
+                class="tech-pillar-icon"
+                style="
+                  background: rgba(52, 211, 153, 0.1);
+                  color: #34d399;
+                  border-color: rgba(52, 211, 153, 0.2);
+                "
+              >
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                </svg>
+              </div>
+              <h3>Segurança Digital</h3>
+              <p>
+                Proteção multi-camadas com criptografia, firewalls avançados e
+                conformidade LGPD.
+              </p>
+            </div>
+            <div class="tech-pillar">
+              <div
+                class="tech-pillar-icon"
+                style="
+                  background: rgba(251, 191, 36, 0.1);
+                  color: #fbbf24;
+                  border-color: rgba(251, 191, 36, 0.2);
+                "
+              >
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                </svg>
+              </div>
+              <h3>Performance</h3>
+              <p>
+                CDN global, cache inteligente e otimização contínua para máxima
+                velocidade e disponibilidade.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CTA ==================== -->
+      <section class="tech-cta" aria-label="Chamada para ação">
+        <div class="container">
+          <div class="tech-cta-box">
+            <div class="tech-cta-glow"></div>
+            <div class="tech-cta-content">
+              <h2>Transformação digital com governança e inovação</h2>
+              <p>
+                Descubra como as soluções tecnológicas da Holding Vera Global
+                podem impulsionar seus negócios.
+              </p>
+            </div>
+            <div class="tech-cta-actions">
+              <a class="btn btn-primary" href="contato.html">
+                Falar com especialistas
+                <span class="btn-icon" aria-hidden="true"
+                  ><svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" /></svg
+                ></span>
+              </a>
+              <a class="btn btn-secondary" href="atuacao.html"
+                >Ver áreas de atuação</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Rodapé">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img
+            src="assets/holdingSemFundo.png"
+            alt="Holding Vera Global"
+            width="180"
+            height="50"
+            loading="lazy"
+            class="footer-logo"
+          />
+          <p class="footer-slogan">
+            Autoridade, governança e crescimento sustentável — com visão global.
+          </p>
+          <div class="footer-social" aria-label="Redes sociais">
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg
+            ></a>
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                /></svg
+            ></a>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" /></svg
+            ></a>
+            <a
+              href="#"
+              aria-label="YouTube"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"
+                />
+                <polygon
+                  points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"
+                /></svg
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Navegação</h3>
+          <nav aria-label="Links do rodapé">
+            <a class="footer-link" href="index.html">Home</a>
+            <a class="footer-link" href="sobre.html">Sobre</a>
+            <a class="footer-link" href="empresas.html">Empresas do Grupo</a>
+            <a class="footer-link" href="atuacao.html">Áreas de Atuação</a>
+            <a class="footer-link" href="tecnologia.html">Tecnologia</a>
+            <a class="footer-link" href="contato.html">Contato</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Dados Institucionais</h3>
+          <address class="footer-address">
+            <p class="footer-contact">
+              <span class="footer-contact-icon" aria-hidden="true"
+                ><svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" /></svg></span
+              >Holding Vera Global Administração LTDA
+            </p>
+            <p class="footer-contact">
+              <span class="footer-contact-icon" aria-hidden="true"
+                ><svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" /></svg></span
+              >contato@holdingveraglobal.com.br
+            </p>
+            <p class="footer-contact">
+              <span class="footer-contact-icon" aria-hidden="true"
+                ><svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  /></svg></span
+              >+55 (11) 3000-0000
+            </p>
+            <p class="footer-contact">
+              <span class="footer-contact-icon" aria-hidden="true"
+                ><svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="2.18" />
+                  <line x1="8" y1="2" x2="8" y2="22" />
+                  <line x1="16" y1="2" x2="16" y2="22" />
+                  <line x1="2" y1="8" x2="22" y2="8" />
+                  <line x1="2" y1="16" x2="22" y2="16" /></svg></span
+              >São Paulo, SP - Brasil
+            </p>
+          </address>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>
+          &copy; <span id="year"></span> Holding Vera Global Administração LTDA.
+          Todos os direitos reservados. CNPJ: 00.000.000/0001-00
+        </p>
+      </div>
+    </footer>
+
+    <button
+      class="back-to-top"
+      type="button"
+      aria-label="Voltar ao topo"
+      data-back-to-top
+    >
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="18 15 12 9 6 15" />
+      </svg>
+    </button>
+
+    <script>
+      (() => {
+        const toggleBtn = document.querySelector("[data-nav-toggle]");
+        const drawer = document.querySelector("[data-nav-drawer]");
+        if (!toggleBtn || !drawer) return;
+        const close = () => {
+          drawer.classList.remove("is-open");
+          toggleBtn.setAttribute("aria-expanded", "false");
+          toggleBtn.classList.remove("is-active");
+        };
+        const open = () => {
+          drawer.classList.add("is-open");
+          toggleBtn.setAttribute("aria-expanded", "true");
+          toggleBtn.classList.add("is-active");
+        };
+        const toggle = () => {
+          drawer.classList.contains("is-open") ? close() : open();
+        };
+        if (!toggleBtn.dataset.fallbackNavBound) {
+          toggleBtn.dataset.fallbackNavBound = "1";
+          toggleBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            toggle();
+          });
+        }
+        if (!drawer.dataset.fallbackNavBound) {
+          drawer.dataset.fallbackNavBound = "1";
+          drawer.addEventListener("click", (e) => {
+            const link = e.target && e.target.closest && e.target.closest("a");
+            if (link) close();
+            if (e.target === drawer) close();
+          });
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") close();
+          });
+        }
+        close();
+      })();
+    </script>
+    <script src="js/global-network-bg.js" type="module" defer></script>
+    <script src="js/tecnologia.js" type="module" defer></script>
+  </body>
+</html>

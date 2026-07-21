@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conheça as empresas do Grupo Vera Global: D&V Vestuário (marca Gasolina), Prime Horse & Campo e a própria Holding Vera Global Administração LTDA. Ecossistema empresarial integrado com governança e visão global."
+    />
+    <meta
+      property="og:title"
+      content="Empresas do Grupo | Holding Vera Global"
+    />
+    <meta
+      property="og:description"
+      content="D&V Vestuário, Prime Horse & Campo e Holding Vera Global: um ecossistema empresarial integrado com governança, inovação e crescimento sustentável."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://holdingveraglobal.com.br/empresas"
+    />
+    <meta
+      property="og:image"
+      content="https://holdingveraglobal.com.br/assets/og-image.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Empresas do Grupo | Holding Vera Global"
+    />
+    <meta
+      name="twitter:description"
+      content="Conheça as empresas do Grupo Vera Global: moda, assessoria equina e holding empresarial."
+    />
+    <title>Empresas do Grupo | Holding Vera Global</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/empresas.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Holding Vera Global">
+          <img
+            src="assets/holdingSemFundo.png"
+            alt="Holding Vera Global"
+            width="180"
+            height="50"
+            loading="eager"
+            class="brand-logo"
+          />
+        </a>
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="sobre.html" class="nav-link">Sobre</a>
+          <a href="empresas.html" class="nav-link is-active" aria-current="page"
+            >Empresas do Grupo</a
+          >
+          <a href="atuacao.html" class="nav-link">Áreas de Atuação</a>
+          <a href="tecnologia.html" class="nav-link">Tecnologia</a>
+          <a href="contato.html" class="nav-link">Contato</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-nav-toggle
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="nav-drawer" id="menu" data-nav-drawer>
+        <div class="container nav-drawer-inner">
+          <nav class="nav-drawer-nav" aria-label="Menu mobile">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="sobre.html" class="nav-link">Sobre</a>
+            <a
+              href="empresas.html"
+              class="nav-link is-active"
+              aria-current="page"
+              >Empresas do Grupo</a
+            >
+            <a href="atuacao.html" class="nav-link">Áreas de Atuação</a>
+            <a href="tecnologia.html" class="nav-link">Tecnologia</a>
+            <a href="contato.html" class="nav-link">Contato</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <!-- ==================== HERO — ECOSYSTEM ==================== -->
+      <section class="eco-hero" aria-label="Ecossistema empresarial">
+        <div class="eco-hero-bg" aria-hidden="true"></div>
+
+        <!-- Canvas para o mapa global interativo -->
+        <canvas
+          class="eco-hero-canvas"
+          id="ecoCanvas"
+          aria-hidden="true"
+        ></canvas>
+
+        <div class="eco-hero-particles" aria-hidden="true"></div>
+
+        <div class="container eco-hero-inner">
+          <div class="eco-hero-content">
+            <div class="eco-hero-badge">
+              <span class="eco-hero-badge-dot"></span>
+              Grupo Vera Global
+            </div>
+            <h1 class="eco-hero-title">
+              Empresas do <span class="eco-hero-title-accent">Grupo</span>
+            </h1>
+            <p class="eco-hero-desc">
+              Um ecossistema empresarial integrado, onde cada marca mantém sua
+              identidade e especialidade, beneficiando-se de governança
+              corporativa, expertise compartilhada e visão estratégica
+              unificada.
+            </p>
+            <div class="eco-hero-stats">
+              <div class="eco-hero-stat">
+                <span class="eco-hero-stat-num" data-count="3">0</span>
+                <span class="eco-hero-stat-label">Empresas</span>
+              </div>
+              <div class="eco-hero-stat">
+                <span class="eco-hero-stat-num" data-count="4">0</span>
+                <span class="eco-hero-stat-label">Segmentos</span>
+              </div>
+              <div class="eco-hero-stat">
+                <span class="eco-hero-stat-num" data-count="100">0</span>
+                <span class="eco-hero-stat-label">% Visão Global</span>
+              </div>
+            </div>
+          </div>
+          <div class="eco-hero-visual" aria-hidden="true">
+            <div class="eco-globe">
+              <div class="eco-globe-ring"></div>
+              <div class="eco-globe-ring eco-globe-ring--2"></div>
+              <div class="eco-globe-ring eco-globe-ring--3"></div>
+              <div class="eco-globe-core"></div>
+              <div class="eco-globe-dots">
+                <span style="top: 20%; left: 30%"></span>
+                <span style="top: 45%; left: 65%"></span>
+                <span style="top: 60%; left: 25%"></span>
+                <span style="top: 30%; left: 70%"></span>
+                <span style="top: 75%; left: 55%"></span>
+                <span style="top: 15%; left: 50%"></span>
+                <span style="top: 55%; left: 15%"></span>
+                <span style="top: 40%; left: 80%"></span>
+              </div>
+              <div class="eco-globe-connections">
+                <svg width="100%" height="100%" viewBox="0 0 400 400">
+                  <line
+                    x1="80"
+                    y1="80"
+                    x2="260"
+                    y2="180"
+                    stroke="rgba(0,180,255,0.12)"
+                    stroke-width="1"
+                    stroke-dasharray="4 4"
+                  />
+                  <line
+                    x1="260"
+                    y1="180"
+                    x2="320"
+                    y2="280"
+                    stroke="rgba(0,180,255,0.12)"
+                    stroke-width="1"
+                    stroke-dasharray="4 4"
+                  />
+                  <line
+                    x1="320"
+                    y1="280"
+                    x2="100"
+                    y2="300"
+                    stroke="rgba(0,180,255,0.12)"
+                    stroke-width="1"
+                    stroke-dasharray="4 4"
+                  />
+                  <line
+                    x1="100"
+                    y1="300"
+                    x2="80"
+                    y2="80"
+                    stroke="rgba(0,180,255,0.12)"
+                    stroke-width="1"
+                    stroke-dasharray="4 4"
+                  />
+                  <line
+                    x1="80"
+                    y1="80"
+                    x2="200"
+                    y2="40"
+                    stroke="rgba(0,180,255,0.08)"
+                    stroke-width="1"
+                    stroke-dasharray="4 4"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="eco-scroll-indicator">
+          <span>Explorar</span>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </div>
+      </section>
+
+      <!-- ==================== INTRODUÇÃO ==================== -->
+      <section class="eco-intro" aria-label="Introdução ao ecossistema">
+        <div class="container">
+          <div class="eco-intro-layout">
+            <div class="eco-intro-text">
+              <span class="eco-tag">Ecossistema</span>
+              <h2 class="eco-title">Um ecossistema de negócios integrado</h2>
+              <p>
+                O Grupo Vera Global é composto por empresas especializadas em
+                diferentes segmentos, cada uma com sua identidade própria,
+                autonomia operacional e objetivos específicos. Sob a gestão da
+                Holding Vera Global Administração LTDA, essas empresas
+                compartilham uma estrutura corporativa sólida, processos
+                padronizados e uma visão estratégica unificada que potencializa
+                resultados.
+              </p>
+              <p>
+                Valorizamos a especialização de cada marca, permitindo que elas
+                desenvolvam suas competências únicas enquanto se beneficiam de
+                sinergias, compartilhamento de recursos e suporte estratégico da
+                holding.
+              </p>
+            </div>
+            <div class="eco-intro-highlight">
+              <div class="eco-highlight-item">
+                <span class="eco-highlight-icon eco-highlight-icon--gov"></span>
+                <div>
+                  <strong>Governança</strong>
+                  <span>Estrutura corporativa sólida</span>
+                </div>
+              </div>
+              <div class="eco-highlight-item">
+                <span class="eco-highlight-icon eco-highlight-icon--syn"></span>
+                <div>
+                  <strong>Sinergia</strong>
+                  <span>Recursos compartilhados</span>
+                </div>
+              </div>
+              <div class="eco-highlight-item">
+                <span class="eco-highlight-icon eco-highlight-icon--vis"></span>
+                <div>
+                  <strong>Visão Global</strong>
+                  <span>Estratégia unificada</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== D&V VESTUÁRIO ==================== -->
+      <section class="eco-company" aria-label="D&V Vestuário">
+        <div class="eco-company-bg eco-company-bg--dv" aria-hidden="true"></div>
+        <div class="container">
+          <div class="eco-company-grid">
+            <div class="eco-company-visual">
+              <div class="eco-company-image">
+                <img
+                  src="assets/gasolinaVest.jpeg"
+                  alt="D&V Vestuário - Marca Gasolina"
+                  loading="lazy"
+                />
+                <div class="eco-company-image-overlay"></div>
+              </div>
+              <div class="eco-company-badges">
+                <span class="eco-badge">Moda Urbana</span>
+                <span class="eco-badge">Design Exclusivo</span>
+                <span class="eco-badge">Qualidade Superior</span>
+              </div>
+            </div>
+            <div class="eco-company-info">
+              <span class="eco-tag eco-tag--dv">Moda & Vestuário</span>
+              <h2 class="eco-title eco-title--dv">
+                D&V Vestuário
+                <span class="eco-title-accent">— Marca Gasolina</span>
+              </h2>
+              <p>
+                Linha de confecção especializada em moda urbana, com foco em
+                qualidade, exclusividade e inovação. Desenvolvemos e produzimos
+                coleções de moda urbana que combinam design contemporâneo,
+                qualidade superior e identidade visual marcante.
+              </p>
+              <p>
+                A marca Gasolina representa mais do que vestuário — representa
+                atitude, estilo de vida e identidade. Nossas peças são criadas
+                para pessoas que buscam expressar sua individualidade através da
+                moda, sem abrir mão de qualidade e conforto.
+              </p>
+              <ul class="eco-company-list">
+                <li>Coleções sazonais com design contemporâneo</li>
+                <li>Atuação em varejo e atacado</li>
+                <li>Materiais selecionados com acabamento premium</li>
+                <li>Governança e gestão profissional</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PRIME HORSE & CAMPO ==================== -->
+      <section class="eco-company" aria-label="Prime Horse & Campo">
+        <div class="eco-company-bg eco-company-bg--ph" aria-hidden="true"></div>
+        <div class="container">
+          <div class="eco-company-grid eco-company-grid--reverse">
+            <div class="eco-company-info">
+              <span class="eco-tag eco-tag--ph">Assessoria Equina</span>
+              <h2 class="eco-title eco-title--ph">Prime, Horse & Campo</h2>
+              <p>
+                Referência em assessoria equina especializada, com serviços de
+                seleção, aquisição, treinamento e comercialização de cavalos de
+                alta performance. Contamos com uma equipe de profissionais
+                experientes e apaixonados por equitação.
+              </p>
+              <p>
+                Oferecemos consultoria especializada para compradores e
+                vendedores, com conhecimento técnico e uma rede de contatos no
+                mercado equino que nos permite oferecer um serviço diferenciado
+                e confiável.
+              </p>
+              <ul class="eco-company-list">
+                <li>Seleção de cavalos para esporte, lazer ou reprodução</li>
+                <li>Avaliação veterinária e de conformidade</li>
+                <li>Treinamento e adestramento especializado</li>
+                <li>Acompanhamento pós-venda personalizado</li>
+              </ul>
+            </div>
+            <div class="eco-company-visual">
+              <div class="eco-company-image">
+                <img
+                  src="assets/primeHorse.jpeg"
+                  alt="Prime Horse & Campo"
+                  loading="lazy"
+                />
+                <div class="eco-company-image-overlay"></div>
+              </div>
+              <div class="eco-company-badges">
+                <span class="eco-badge">Excelência</span>
+                <span class="eco-badge">Tradição</span>
+                <span class="eco-badge">Alta Performance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== HOLDING ==================== -->
+      <section class="eco-company" aria-label="Holding Vera Global">
+        <div
+          class="eco-company-bg eco-company-bg--holding"
+          aria-hidden="true"
+        ></div>
+        <div class="container">
+          <div class="eco-company-grid">
+            <div class="eco-company-visual">
+              <div class="eco-company-image eco-company-image--holding">
+                <img
+                  src="assets/holding.jpeg"
+                  alt="Holding Vera Global"
+                  loading="lazy"
+                />
+                <div class="eco-company-image-overlay"></div>
+              </div>
+              <div class="eco-company-badges">
+                <span class="eco-badge controladora">Controladora</span>
+                <span class="eco-badge">Estratégica</span>
+                <span class="eco-badge">Governança</span>
+              </div>
+            </div>
+            <div class="eco-company-info">
+              <span class="eco-tag eco-tag--holding"
+                >Controladora Estratégica</span
+              >
+              <h2 class="eco-title eco-title--holding">
+                Holding Vera Global
+                <span class="eco-title-accent">Administração LTDA</span>
+              </h2>
+              <p>
+                A controladora estratégica do Grupo Vera Global, responsável por
+                governança, gestão, proteção patrimonial e expansão empresarial.
+                Como controladora estratégica, assumimos responsabilidade
+                integral pela governança corporativa, gestão financeira,
+                proteção patrimonial, estruturação empresarial e expansão de
+                negócios.
+              </p>
+              <p>
+                Nossa atuação combina visão de longo prazo com capacidade de
+                execução. Estabelecemos diretrizes estratégicas, alocamos
+                recursos de forma eficiente, monitoramos desempenho e
+                identificamos sinergias entre as diferentes frentes de negócio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== METRICAS DO GRUPO ==================== -->
+      <section class="eco-metrics-section" aria-label="Métricas do grupo">
+        <div class="container">
+          <div class="eco-metrics-header">
+            <span class="eco-tag">Indicadores</span>
+            <h2 class="eco-title">O Grupo em Números</h2>
+            <p>
+              Indicadores que demonstram a solidez e o potencial do ecossistema
+              Vera Global.
+            </p>
+          </div>
+          <div class="eco-metrics-grid">
+            <div class="eco-metric-card">
+              <span class="eco-metric-value" data-count="3">0</span>
+              <span class="eco-metric-label">Empresas do Grupo</span>
+              <div class="eco-metric-bar"></div>
+            </div>
+            <div class="eco-metric-card">
+              <span class="eco-metric-value" data-count="4">0</span>
+              <span class="eco-metric-label">Segmentos de Atuação</span>
+              <div class="eco-metric-bar"></div>
+            </div>
+            <div class="eco-metric-card">
+              <span class="eco-metric-value" data-count="100"
+                >0<span class="eco-metric-suffix">%</span></span
+              >
+              <span class="eco-metric-label">Foco em Longo Prazo</span>
+              <div class="eco-metric-bar"></div>
+            </div>
+            <div class="eco-metric-card">
+              <span class="eco-metric-value" data-count="15"
+                >0<span class="eco-metric-suffix">+</span></span
+              >
+              <span class="eco-metric-label">Anos de Experiência</span>
+              <div class="eco-metric-bar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SINERGIAS ==================== -->
+      <section class="eco-synergies" aria-label="Sinergias do grupo">
+        <div class="container">
+          <div class="eco-synergies-header">
+            <span class="eco-tag">Integração</span>
+            <h2 class="eco-title">Conexões que Fortalecem o Grupo</h2>
+          </div>
+          <div class="eco-synergies-grid">
+            <div class="eco-synergy-card">
+              <div class="eco-synergy-icon eco-synergy-icon--gov"></div>
+              <h3>Governança Compartilhada</h3>
+              <p>
+                Padrões elevados de transparência, controle e gestão que
+                beneficiam todas as marcas do ecossistema.
+              </p>
+            </div>
+            <div class="eco-synergy-card">
+              <div class="eco-synergy-icon eco-synergy-icon--fin"></div>
+              <h3>Gestão Financeira Integrada</h3>
+              <p>
+                Alocação otimizada de recursos e sustentabilidade financeira
+                para todas as empresas do grupo.
+              </p>
+            </div>
+            <div class="eco-synergy-card">
+              <div class="eco-synergy-icon eco-synergy-icon--tech"></div>
+              <h3>Tecnologia & Inovação</h3>
+              <p>
+                Soluções digitais, broadcasting e infraestrutura disponíveis
+                para todas as marcas do grupo.
+              </p>
+            </div>
+            <div class="eco-synergy-card">
+              <div class="eco-synergy-icon eco-synergy-icon--exp"></div>
+              <h3>Expansão & Mercado</h3>
+              <p>
+                Rede de contatos, oportunidades e expertise para crescimento
+                nacional e internacional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CTA ==================== -->
+      <section class="eco-cta" aria-label="Chamada para ação">
+        <div class="container">
+          <div class="eco-cta-box">
+            <div class="eco-cta-content">
+              <h2>Faça parte do ecossistema Vera Global</h2>
+              <p>
+                Conheça as empresas do grupo e descubra como a integração,
+                governança e visão estratégica podem potencializar seus
+                negócios.
+              </p>
+            </div>
+            <div class="eco-cta-actions">
+              <a class="btn btn-primary" href="sobre.html">
+                Sobre a Holding
+                <span class="btn-icon" aria-hidden="true"
+                  ><svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" /></svg
+                ></span>
+              </a>
+              <a class="btn btn-secondary" href="contato.html"
+                >Entre em contato</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Rodapé">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img
+            src="assets/holdingSemFundo.png"
+            alt="Holding Vera Global"
+            width="180"
+            height="50"
+            loading="lazy"
+            class="footer-logo"
+          />
+          <p class="footer-slogan">
+            Autoridade, governança e crescimento sustentável — com visão global.
+          </p>
+          <div class="footer-social" aria-label="Redes sociais">
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="YouTube"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"
+                />
+                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Navegação</h3>
+          <nav aria-label="Links do rodapé">
+            <a class="footer-link" href="index.html">Home</a>
+            <a class="footer-link" href="sobre.html">Sobre</a>
+            <a class="footer-link" href="empresas.html">Empresas do Grupo</a>
+            <a class="footer-link" href="atuacao.html">Áreas de Atuação</a>
+            <a class="footer-link" href="tecnologia.html">Tecnologia</a>
+            <a class="footer-link" href="contato.html">Contato</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Dados Institucionais</h3>
+          <address class="footer-address">
+            <p class="footer-contact">
+              <span class="footer-contact-icon" aria-hidden="true"
+                ><svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" /></svg></span
+              >Holding Vera Global Administração LTDA
+            </p>
+            <p class="footer-contact">
+              <span class="footer-contact-icon" aria-hidden="true"
+                ><svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" /></svg></span
+              >contato@holdingveraglobal.com.br
+            </p>
+            <p class="footer-contact">
+              <span class="footer-contact-icon" aria-hidden="true"
+                ><svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  /></svg></span
+              >+55 (11) 3000-0000
+            </p>
+            <p class="footer-contact">
+              <span class="footer-contact-icon" aria-hidden="true"
+                ><svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="2.18" />
+                  <line x1="8" y1="2" x2="8" y2="22" />
+                  <line x1="16" y1="2" x2="16" y2="22" />
+                  <line x1="2" y1="8" x2="22" y2="8" />
+                  <line x1="2" y1="16" x2="22" y2="16" /></svg></span
+              >São Paulo, SP - Brasil
+            </p>
+          </address>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>
+          &copy; <span id="year"></span> Holding Vera Global Administração LTDA.
+          Todos os direitos reservados. CNPJ: 00.000.000/0001-00
+        </p>
+      </div>
+    </footer>
+
+    <button
+      class="back-to-top"
+      type="button"
+      aria-label="Voltar ao topo"
+      data-back-to-top
+    >
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="18 15 12 9 6 15" />
+      </svg>
+    </button>
+
+    <script>
+      (() => {
+        const toggleBtn = document.querySelector("[data-nav-toggle]");
+        const drawer = document.querySelector("[data-nav-drawer]");
+        if (!toggleBtn || !drawer) return;
+        const close = () => {
+          drawer.classList.remove("is-open");
+          toggleBtn.setAttribute("aria-expanded", "false");
+          toggleBtn.classList.remove("is-active");
+        };
+        const open = () => {
+          drawer.classList.add("is-open");
+          toggleBtn.setAttribute("aria-expanded", "true");
+          toggleBtn.classList.add("is-active");
+        };
+        const toggle = () => {
+          drawer.classList.contains("is-open") ? close() : open();
+        };
+        if (!toggleBtn.dataset.fallbackNavBound) {
+          toggleBtn.dataset.fallbackNavBound = "1";
+          toggleBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            toggle();
+          });
+        }
+        if (!drawer.dataset.fallbackNavBound) {
+          drawer.dataset.fallbackNavBound = "1";
+          drawer.addEventListener("click", (e) => {
+            const link = e.target && e.target.closest && e.target.closest("a");
+            if (link) close();
+            if (e.target === drawer) close();
+          });
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") close();
+          });
+        }
+        close();
+      })();
+    </script>
+    <script src="js/global-network-bg.js" type="module" defer></script>
+    <script src="js/empresas.js" type="module" defer></script>
+  </body>
+</html>
