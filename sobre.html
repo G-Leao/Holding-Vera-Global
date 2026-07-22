@@ -36,6 +36,7 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="CSS/nav.css" />
     <link rel="stylesheet" href="CSS/sobre.css" />
   </head>
 
@@ -71,7 +72,7 @@
           type="button"
           aria-label="Abrir menu"
           aria-expanded="false"
-          aria-controls="menu"
+          aria-controls="mobile-menu"
           data-nav-toggle
         >
           <span aria-hidden="true"></span>
@@ -80,19 +81,17 @@
         </button>
       </div>
 
-      <div class="nav-drawer" id="menu" data-nav-drawer>
-        <div class="container nav-drawer-inner">
-          <nav class="nav-drawer-nav" aria-label="Menu mobile">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="sobre.html" class="nav-link is-active" aria-current="page"
-              >Sobre</a
-            >
-            <a href="empresas.html" class="nav-link">Empresas do Grupo</a>
-            <a href="atuacao.html" class="nav-link">Áreas de Atuação</a>
-            <a href="tecnologia.html" class="nav-link">Tecnologia</a>
-            <a href="contato.html" class="nav-link">Contato</a>
-          </nav>
-        </div>
+      <div class="mobile-menu" id="mobile-menu" data-nav-drawer>
+        <nav class="mobile-menu-nav" aria-label="Menu mobile">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="sobre.html" class="nav-link is-active" aria-current="page"
+            >Sobre</a
+          >
+          <a href="empresas.html" class="nav-link">Empresas do Grupo</a>
+          <a href="atuacao.html" class="nav-link">Áreas de Atuação</a>
+          <a href="tecnologia.html" class="nav-link">Tecnologia</a>
+          <a href="contato.html" class="nav-link">Contato</a>
+        </nav>
       </div>
     </header>
 
@@ -1068,69 +1067,8 @@
         <polyline points="18 15 12 9 6 15" />
       </svg>
     </button>
-    <!--
-      FALLBACK TEMPORÁRIO (MENU MOBILE)
-      - Mantém o comportamento esperado mesmo se js/index.js estiver ausente/sem funcionar.
-      - Não remove nenhum script existente.
-      - Só adiciona/atualiza classes quando os elementos existem.
-    -->
-    <script>
-      (() => {
-        const toggleBtn = document.querySelector("[data-nav-toggle]");
-        const drawer = document.querySelector("[data-nav-drawer]");
-
-        if (!toggleBtn || !drawer) return;
-
-        const close = () => {
-          drawer.classList.remove("is-open");
-          toggleBtn.setAttribute("aria-expanded", "false");
-          toggleBtn.classList.remove("is-active");
-        };
-
-        const open = () => {
-          drawer.classList.add("is-open");
-          toggleBtn.setAttribute("aria-expanded", "true");
-          toggleBtn.classList.add("is-active");
-        };
-
-        const toggle = () => {
-          drawer.classList.contains("is-open") ? close() : open();
-        };
-
-        // Evita conflitos caso js/index.js/navbar.js já tenha handlers.
-        if (!toggleBtn.dataset.fallbackNavBound) {
-          toggleBtn.dataset.fallbackNavBound = "1";
-          toggleBtn.addEventListener("click", (e) => {
-            e.preventDefault();
-            toggle();
-          });
-        }
-
-        if (!drawer.dataset.fallbackNavBound) {
-          drawer.dataset.fallbackNavBound = "1";
-
-          // Fecha ao clicar em qualquer link dentro da navegação mobile
-          drawer.addEventListener("click", (e) => {
-            const link = e.target && e.target.closest && e.target.closest("a");
-            if (link) close();
-
-            // Fecha ao clicar fora do menu (overlay/página)
-            // Como a drawer cobre a tela inteira, qualquer clique direto nela fecha.
-            if (e.target === drawer) close();
-          });
-
-          // Fecha ao pressionar ESC
-          document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape") close();
-          });
-        }
-
-        // Inicializa estado consistente no load
-        close();
-      })();
-    </script>
-
     <script src="js/global-network-bg.js" type="module" defer></script>
     <script src="js/sobre.js" type="module" defer></script>
+    <script src="js/nav.js" defer></script>
   </body>
 </html>

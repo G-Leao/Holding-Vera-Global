@@ -1,0 +1,310 @@
+/* ============================================================
+   HOLDING VERA GLOBAL — NAV.CSS
+   Sistema de Navegação Compartilhado
+   ============================================================ */
+
+/* ---- Variáveis ---- */
+:root {
+  --nav-height: 80px;
+  --nav-bg: rgba(10, 26, 58, 0.95);
+  --nav-bg-scrolled: rgba(255, 255, 255, 0.95);
+  --nav-text: rgba(255, 255, 255, 0.9);
+  --nav-text-scrolled: rgba(15, 23, 42, 0.9);
+  --nav-accent: #00d4ff;
+  --nav-accent-scrolled: #2563eb;
+  --nav-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  --nav-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---- Header Base ---- */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: var(--nav-height);
+  background: var(--nav-bg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all var(--nav-transition);
+}
+
+.site-header.is-scrolled {
+  background: var(--nav-bg-scrolled);
+  box-shadow: var(--nav-shadow);
+  border-bottom: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+.site-header.is-hidden {
+  transform: translateY(-100%);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---- Brand/Logo ---- */
+.brand {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  z-index: 1001;
+}
+
+.brand-logo {
+  height: 60px;
+  width: auto;
+  transition: transform var(--nav-transition);
+}
+
+.brand:hover .brand-logo {
+  transform: scale(1.05);
+}
+
+/* ---- Navegação Desktop ---- */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link {
+  position: relative;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--nav-text);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all var(--nav-transition);
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: var(--nav-accent);
+  background: rgba(0, 212, 255, 0.1);
+}
+
+.nav-link.is-active {
+  color: var(--nav-accent);
+  font-weight: 600;
+}
+
+.nav-link.is-active::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 3px;
+  background: var(--nav-accent);
+  border-radius: 2px;
+}
+
+/* Estado scrolled do header */
+.site-header.is-scrolled .nav-link {
+  color: var(--nav-text-scrolled);
+}
+
+.site-header.is-scrolled .nav-link:hover {
+  color: var(--nav-accent-scrolled);
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.site-header.is-scrolled .nav-link.is-active {
+  color: var(--nav-accent-scrolled);
+}
+
+.site-header.is-scrolled .nav-link.is-active::after {
+  background: var(--nav-accent-scrolled);
+}
+
+/* ---- Botão Mobile Toggle (Hambúrguer) ---- */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+  position: relative;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--nav-text);
+  border-radius: 2px;
+  transition: all var(--nav-transition);
+  transform-origin: center;
+}
+
+.site-header.is-scrolled .nav-toggle span {
+  background: var(--nav-text-scrolled);
+}
+
+.nav-toggle.is-active span {
+  background: var(--nav-text-scrolled);
+}
+
+.nav-toggle.is-active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.is-active span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.nav-toggle.is-active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ---- Menu Mobile Drawer ---- */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--nav-transition);
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 400px;
+  padding: 24px;
+}
+
+.mobile-menu-nav .nav-link {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 16px 24px;
+  color: var(--nav-text-scrolled);
+  width: 100%;
+  text-align: center;
+  border-radius: 12px;
+  transition: all var(--nav-transition);
+}
+
+.mobile-menu-nav .nav-link:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.1) 0%,
+    rgba(0, 180, 255, 0.1) 100%
+  );
+  color: var(--nav-accent-scrolled);
+  transform: translateX(4px);
+}
+
+.mobile-menu-nav .nav-link.is-active {
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.15) 0%,
+    rgba(0, 180, 255, 0.15) 100%
+  );
+  color: var(--nav-accent-scrolled);
+}
+
+.mobile-menu-nav .nav-link.is-active::after {
+  display: none;
+}
+
+/* ---- Responsivo ---- */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .brand-logo {
+    height: 50px;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/* ---- Scroll Lock (quando menu mobile está aberto) ---- */
+body.no-scroll {
+  overflow: hidden;
+  padding-right: var(--scrollbar-width, 0px);
+}
+
+/* ---- Animações Suaves ---- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-menu.is-open .mobile-menu-nav .nav-link {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.mobile-menu.is-open .mobile-menu-nav .nav-link:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.mobile-menu.is-open .mobile-menu-nav .nav-link:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.mobile-menu.is-open .mobile-menu-nav .nav-link:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+.mobile-menu.is-open .mobile-menu-nav .nav-link:nth-child(4) {
+  animation-delay: 0.2s;
+}
+
+.mobile-menu.is-open .mobile-menu-nav .nav-link:nth-child(5) {
+  animation-delay: 0.25s;
+}
+
+.mobile-menu.is-open .mobile-menu-nav .nav-link:nth-child(6) {
+  animation-delay: 0.3s;
+}
