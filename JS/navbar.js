@@ -16,7 +16,6 @@ export function initNavbar() {
       toggle.setAttribute("aria-expanded", String(open));
       drawer.classList.toggle("is-open", open);
       toggle.classList.toggle("is-active", open);
-      document.body.classList.toggle("no-scroll", open);
     };
 
     const isOpen = () => drawer.classList.contains("is-open");
