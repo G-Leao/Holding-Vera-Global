@@ -1,0 +1,81 @@
+/* SOBRE — estilos específicos */
+
+.pillar-mini {
+  gap: var(--space-md);
+}
+
+.pillar-mini .card h3 {
+  font-size: 1rem;
+}
+
+/* Linha do tempo institucional */
+.timeline {
+  position: relative;
+  display: grid;
+  gap: var(--space-xl);
+  padding-left: var(--space-xl);
+  counter-reset: step;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    var(--line-strong),
+    transparent
+  );
+}
+
+.timeline li {
+  position: relative;
+  counter-increment: step;
+  padding-left: var(--space-lg);
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--space-xl) + 3px);
+  top: 10px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--blue-neon);
+  box-shadow: 0 0 0 5px rgba(0, 180, 255, 0.12);
+  transition: box-shadow var(--t-base) var(--ease-out);
+}
+
+.timeline li:hover::before {
+  box-shadow: 0 0 0 9px rgba(0, 180, 255, 0.14);
+}
+
+.timeline h3 {
+  font-size: 1.08rem;
+  margin-bottom: 8px;
+}
+
+.timeline p {
+  color: var(--text-muted);
+  font-size: 0.96rem;
+  max-width: 68ch;
+}
+
+@media (max-width: 640px) {
+  .timeline {
+    padding-left: var(--space-lg);
+  }
+
+  .timeline li {
+    padding-left: var(--space-md);
+  }
+
+  .timeline li::before {
+    left: calc(-1 * var(--space-lg) + 3px);
+  }
+}

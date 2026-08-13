@@ -1,0 +1,84 @@
+/* CONTATO — estilos específicos */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+.form-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(14px);
+  padding: var(--space-2xl);
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  margin-bottom: var(--space-lg);
+}
+
+.field label {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  font: inherit;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  transition:
+    border-color var(--t-base) var(--ease-out),
+    box-shadow var(--t-base) var(--ease-out);
+}
+
+.field textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: rgba(0, 180, 255, 0.5);
+  box-shadow: 0 0 0 4px rgba(0, 180, 255, 0.1);
+}
+
+.form-status {
+  margin-top: var(--space-md);
+  font-size: 0.9rem;
+  color: var(--blue-neon);
+  min-height: 1.2em;
+}
+
+.contact-cards {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.contact-cards .card a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contact-cards .card a:hover {
+  color: var(--blue-neon);
+}
+
+@media (max-width: 960px) {
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

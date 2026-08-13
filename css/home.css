@@ -1,0 +1,30 @@
+/* HOME — estilos específicos */
+
+.home-figure {
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--line);
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-lg);
+  counter-reset: pillar;
+}
+
+.pillars .card {
+  display: grid;
+  align-content: start;
+}
+
+@media (max-width: 1024px) {
+  .pillars {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .pillars {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

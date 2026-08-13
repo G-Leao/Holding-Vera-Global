@@ -1,0 +1,49 @@
+/* ÁREAS DE ATUAÇÃO — estilos específicos */
+
+body[data-page="atuacao"] .hero-mark {
+  width: 100%;
+  max-width: 490px;
+}
+.sector-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-lg);
+}
+
+.sector-grid .card {
+  position: relative;
+  overflow: hidden;
+}
+
+.sector-grid .card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    var(--blue-neon),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity var(--t-base) var(--ease-out);
+}
+
+.sector-grid .card:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .sector-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .sector-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
